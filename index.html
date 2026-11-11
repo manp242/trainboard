@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trainboard — coming soon</title>
+<meta name="description" content="Trainboard: one dashboard and an AI coach for your Garmin training data. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d10; --panel: #13161b; --line: #232831;
+    --text: #e8ebf0; --muted: #9aa3b2; --accent: #4ade80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column;
+  }
+  .wrap { width: 100%; max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; }
+  .logo { font-weight: 700; font-size: 20px; letter-spacing: -0.02em; }
+  .logo span { color: var(--accent); }
+  main { flex: 1; padding: 56px 0 72px; }
+  .tag {
+    display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent);
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; margin-bottom: 24px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 700; max-width: 14ch; }
+  .lede { color: var(--muted); font-size: 18px; max-width: 56ch; margin-top: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 56px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 15px; }
+  .note { color: var(--muted); font-size: 14px; margin-top: 40px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  a { color: var(--text); }
+</style>
+</head>
+<body>
+  <header><div class="wrap"><div class="logo">Train<span>board</span></div></div></header>
+  <main>
+    <div class="wrap">
+      <div class="tag">Coming soon</div>
+      <h1>Your Garmin data, finally making sense.</h1>
+      <p class="lede">Trainboard connects to your Garmin account and turns your activities, sleep, HRV and training load into one clear dashboard, with an AI coach that answers questions about your own training.</p>
+
+      <div class="grid">
+        <div class="card"><h3>One dashboard</h3><p>Swim, bike, run, strength, recovery and trends in one place, built for endurance athletes.</p></div>
+        <div class="card"><h3>Your zones, your plan</h3><p>Heart-rate, power and pace zones from your own tests, with progress tracked against your training plan.</p></div>
+        <div class="card"><h3>AI coach</h3><p>Ask how a session went, whether you're recovered, or what to adjust. Answers come from your data.</p></div>
+        <div class="card"><h3>Private by default</h3><p>Connect with Garmin's secure sign-in. We never see your password, and you can disconnect and delete your data anytime.</p></div>
+      </div>
+
+      <p class="note">Trainboard is in development. Garmin integration will be available once approved through the Garmin Connect Developer Program.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Trainboard</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
